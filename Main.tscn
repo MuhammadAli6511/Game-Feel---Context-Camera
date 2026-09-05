@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://clwikkfdxq5b1"]
+
+[ext_resource type="Script" uid="uid://5kcdi8lursq" path="res://Main.cs" id="1_glv2v"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_glv2v"]
+size = Vector3(20, 0.5, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uu6xs"]
+size = Vector3(20, 0.5, 20)
+
+[node name="Main" type="Node3D" unique_id=415473265]
+script = ExtResource("1_glv2v")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=445707636]
+mesh = SubResource("BoxMesh_glv2v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D" unique_id=1174921821]
+shape = SubResource("BoxShape3D_uu6xs")
