@@ -1,3 +1,10 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Ignore export debug files
+*.pdb
+bin/**/createdump.exe
+
+bin/*
+!bin/game.exe
